@@ -1,0 +1,15 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+GCP_PROJECT_ID = os.getenv("GCP_PROJECT_ID")
+GCP_SERVICE_ACCOUNT_KEY = os.getenv("GCP_SERVICE_ACCOUNT_KEY")
+
+BIGQUERY_DATASET = os.getenv("BIGQUERY_DATASET")
+
+GCS_BUCKET_RAW = os.getenv("GCS_BUCKET_RAW")
+GCS_BUCKET_PROCESSED = os.getenv("GCS_BUCKET_PROCESSED")
+GCS_BUCKET_ARCHIVE = os.getenv("GCS_BUCKET_ARCHIVE")
+
+METEO_API_KEY = os.getenv("METEO_API_KEY")
